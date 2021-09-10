@@ -1,7 +1,7 @@
 name: Audit live site
-on: push
 # Allows you to run this workflow manually from the Actions tab
-workflow_dispatch:
+on: [push, workflow_dispatch]
+
 jobs:
   audit:
     runs-on: ubuntu-latest
